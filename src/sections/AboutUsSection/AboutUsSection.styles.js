@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#fffde7', // fallback for light yellow
+    backgroundColor: require('../../theme/colors').colors.aboutUsBg,
     borderRadius: 10,
     marginVertical: 10,
     shadowColor: '#000',

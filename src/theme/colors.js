@@ -13,5 +13,12 @@ export const colors = {
   border: '#E0E0E0',
   error: '#D32F2F',
   success: '#388E3C',
-  aboutbg:'#0b283e',
+  aboutbg: '#0b283e',
+  homeBg: '#e3f2fd', // light blue
+  aboutUsBg: '#fffde7', // light yellow
+  academicsBg: '#e8f5e9', // light green
+  admissionBg: '#fce4ec', // light pink
+  blogBg: '#f3e5f5', // light purple
+  missionBg: '#ede7f6', // lavender
+  teachersBg: '#fff3e0', // light orange
 };

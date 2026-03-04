@@ -4,7 +4,7 @@ import { colors, spacing, typography, layout } from '../../theme';
 export default StyleSheet.create({
   container: {
     height: layout.sectionHeight,
-    backgroundColor: colors.background,
+    backgroundColor: colors.missionBg,
     justifyContent: 'center',
     alignItems: 'center',
     padding: spacing.large,
