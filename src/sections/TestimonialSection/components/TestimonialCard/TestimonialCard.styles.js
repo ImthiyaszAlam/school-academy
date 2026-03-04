@@ -4,7 +4,8 @@ import { colors, spacing, typography } from '../../../../theme';
 export default StyleSheet.create({
   card: {
     backgroundColor: colors.surface,
-    borderRadius: 16,
+    borderRadius: 32,
+    borderBottomLeftRadius: 0,
     padding: spacing.md,
     margin: spacing.sm,
     shadowColor: colors.shadow,
