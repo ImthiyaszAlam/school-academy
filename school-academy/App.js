@@ -8,10 +8,11 @@ import AcademicsSection from './src/sections/AcademicsSection/AcademicsSection';
 import AdmissionSection from './src/sections/AdmissionSection/AdmissionSection';
 import BlogSection from './src/sections/BlogSection/BlogSection';
 import TeachersSection from './src/sections/TeachersSection/TeachersSection';
+
+import AboutUsSection from './src/sections/AboutUsSection/AboutUsSection';
 import MissionSection from './src/sections/MissionSection/MissionSection';
 
 import { colors } from './src/theme';
-
 export default function App() {
   return (
     <View style={styles.container}>
@@ -21,7 +22,10 @@ export default function App() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContainer}
       >
+
         <HomeSection />
+        
+        <AboutUsSection />
         <AcademicsSection />
         <AdmissionSection />
         <BlogSection />
