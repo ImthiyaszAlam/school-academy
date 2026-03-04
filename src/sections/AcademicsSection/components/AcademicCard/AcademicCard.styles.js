@@ -46,6 +46,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginLeft: spacing.xs,
   },
+  title:{
+    ...typography.headingMedium,
+    color: colors.text,
+    marginBottom: spacing.xs,
+  },
   description: {
     ...typography.body,
     color: colors.text,

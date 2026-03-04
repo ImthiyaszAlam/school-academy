@@ -8,6 +8,7 @@ const AcademicCard = ({
   image,
   totalClasses,
   rating,
+  title,
   description,
   totalSeats,
   period,
@@ -28,6 +29,7 @@ const AcademicCard = ({
           <Text style={styles.rating}>{rating} ★</Text>
         </View>
       </View>
+      <Text style={styles.title}>{title}</Text>
       <Text style={styles.description}>{description}</Text>
       <View style={styles.bottomSection}>
         <View style={[styles.bottomItem, styles.bottomItemLeft]}>
