@@ -12,6 +12,7 @@ import TeachersSection from './src/sections/TeachersSection/TeachersSection';
 
 import AboutUsSection from './src/sections/AboutUsSection/AboutUsSection';
 import MissionSection from './src/sections/MissionSection/MissionSection';
+import TestimonialSection from './src/sections/TestimonialSection/TestimonialSection';
 
 import { colors } from './src/theme';
 import AboutSection from './src/sections/AboutSection/AboutSection';
@@ -26,6 +27,7 @@ export default function App() {
     blog: useRef(null),
     teachers: useRef(null),
     mission: useRef(null),
+    testimonials: useRef(null),
   };
 
   // Scroll to section handler
@@ -52,6 +54,7 @@ export default function App() {
         <View ref={sectionRefs.home}><HomeSection /></View>
         <View ref={sectionRefs.about}><AboutSection /></View>
         <View ref={sectionRefs.academics}><AcademicsSection /></View>
+        <View ref={sectionRefs.testimonials}><TestimonialSection /></View>
         <View ref={sectionRefs.admissions}><AdmissionSection /></View>
         <View ref={sectionRefs.blog}><BlogSection /></View>
         <View ref={sectionRefs.teachers}><TeachersSection /></View>
