@@ -1,4 +1,5 @@
 import AboutInfoCard from './components/AboutInfoCard/AboutInfoCard';
+import Button from '../../components/util/Button';
 import React from 'react';
 import { View, Text, Image, useWindowDimensions } from 'react-native';
 import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
@@ -41,6 +42,8 @@ const AboutSection = () => {
           <Text style={styles.paragraph}>
             lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
           </Text>
+
+          {/* Center the info cards and text on mobile */}
           <View style={[styles.infoRow, isMobile && styles.infoRowMobile]}>
             <View style={[styles.infoColumnLeft, isMobile && styles.infoColumnLeftMobile]}>
               <AboutInfoCard
@@ -60,6 +63,20 @@ const AboutSection = () => {
               </Text>
             </View>
           </View>
+
+          <View style={{ flexDirection: 'row', marginTop: 24 }}>
+            <Button
+              title="Learn More"
+              onPress={() => {}}
+              style={{ marginRight: 16 }}
+            />
+            <Button
+              title="Contact Us"
+              onPress={() => {}}
+            />
+          </View>
+
+
         </View>
       </View>
     </SectionWrapper>
