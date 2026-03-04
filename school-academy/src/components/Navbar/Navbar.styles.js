@@ -12,7 +12,13 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.border,
     width: '100%',
-    zIndex: 10,
+    zIndex: 100,
+    position: 'sticky',
+    top: 0,
+    left: 0,
+    right: 0,
+    // For iOS/Android fallback, use position: 'absolute' with elevation if needed
+    ...(Platform.OS !== 'web' ? { position: 'absolute', top: 0, left: 0, right: 0, elevation: 10 } : {}),
   },
   left: {
     minWidth: 80,

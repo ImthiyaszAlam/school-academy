@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { View, Text, Image, Pressable, Platform } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
@@ -14,7 +15,7 @@ const NAV_ITEMS = [
   { label: 'Mission', key: 'mission' },
 ];
 
-const Navbar = () => {
+const Navbar = ({ onNavPress }) => {
   return (
     <View style={styles.container}>
       {/* Left: Logo */}
@@ -31,7 +32,7 @@ const Navbar = () => {
             android_ripple={Platform.OS === 'android' ? { color: 'transparent' } : undefined}
             accessibilityRole="link"
             accessibilityLabel={item.label}
-            onPress={() => {}}
+            onPress={() => onNavPress && onNavPress(item.key)}
           >
             <Text style={styles.navItemText}>{item.label}</Text>
           </Pressable>
