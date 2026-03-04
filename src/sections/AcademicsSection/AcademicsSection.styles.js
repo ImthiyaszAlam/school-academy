@@ -4,7 +4,7 @@ import { colors, spacing, typography, layout } from '../../theme';
 export default StyleSheet.create({
   container: {
     paddingHorizontal: layout.horizontalPaddingPercent,
-    height: layout.sectionHeight,
+    minHeight: layout.sectionHeight,
     backgroundColor: colors.academicsBg,
     justifyContent: 'center',
     alignItems: 'center',
