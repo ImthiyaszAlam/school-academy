@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { label: 'Admissions', key: 'admissions' },
   { label: 'Blog', key: 'blog' },
   { label: 'Mission', key: 'mission' },
+  { label: 'Teachers', key: 'teachers' },
 ];
 
 const Navbar = ({ onNavPress }) => {
