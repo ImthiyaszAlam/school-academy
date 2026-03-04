@@ -14,6 +14,7 @@ import AboutUsSection from './src/sections/AboutUsSection/AboutUsSection';
 import MissionSection from './src/sections/MissionSection/MissionSection';
 
 import { colors } from './src/theme';
+import AboutSection from './src/sections/AboutSection/AboutSection';
 export default function App() {
   // Refs for each section
   const scrollRef = useRef(null);
@@ -49,7 +50,7 @@ export default function App() {
         contentContainerStyle={styles.scrollContainer}
       >
         <View ref={sectionRefs.home}><HomeSection /></View>
-        <View ref={sectionRefs.about}><AboutUsSection /></View>
+        <View ref={sectionRefs.about}><AboutSection /></View>
         <View ref={sectionRefs.academics}><AcademicsSection /></View>
         <View ref={sectionRefs.admissions}><AdmissionSection /></View>
         <View ref={sectionRefs.blog}><BlogSection /></View>
