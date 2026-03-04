@@ -1,3 +1,4 @@
+import AboutInfoCard from './components/AboutInfoCard/AboutInfoCard';
 import React from 'react';
 import { View, Text, Image, useWindowDimensions } from 'react-native';
 import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
@@ -40,6 +41,25 @@ const AboutSection = () => {
           <Text style={styles.paragraph}>
             lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
           </Text>
+          <View style={[styles.infoRow, isMobile && styles.infoRowMobile]}>
+            <View style={[styles.infoColumnLeft, isMobile && styles.infoColumnLeftMobile]}>
+              <AboutInfoCard
+                icon={ABOUT_ICON}
+                title="About Our School"
+                subtitle="Empowering students for a brighter future"
+              />
+              <AboutInfoCard
+                icon={ABOUT_ICON}
+                title="About Our School"
+                subtitle="Empowering students for a brighter future"
+              />
+            </View>
+            <View style={[styles.infoColumnRight, isMobile && styles.infoColumnRightMobile]}>
+              <Text style={styles.paragraph}>
+                Our school is dedicated to providing a nurturing environment where students can excel academically and personally. We believe in holistic education and strive to empower every student for a brighter future.
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
     </SectionWrapper>

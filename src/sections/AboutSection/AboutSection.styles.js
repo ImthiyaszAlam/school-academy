@@ -1,14 +1,4 @@
-  titleRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    marginBottom: spacing.md,
-  },
-  titleIcon: {
-    width: 24,
-    height: 24,
-    marginRight: spacing.sm,
-  },
+
 import { StyleSheet } from 'react-native';
 import { colors, spacing, typography, layout } from '../../theme';
 
@@ -59,6 +49,35 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     textAlign: 'center',
+  },
+  infoRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginTop: spacing.md,
+    width: '100%',
+  },
+  infoColumnLeft: {
+    flex: 1,
+    marginRight: spacing.md,
+  },
+  infoColumnRight: {
+    flex: 1,
+    marginLeft: spacing.md,
+    justifyContent: 'center',
+  },
+  infoRowMobile: {
+    flexDirection: 'column',
+    width: '100%',
+  },
+  infoColumnLeftMobile: {
+    width: '100%',
+    marginRight: 0,
+    marginBottom: spacing.md,
+  },
+  infoColumnRightMobile: {
+    width: '100%',
+    marginLeft: 0,
   },
   title: {
     ...typography.headingMedium,
