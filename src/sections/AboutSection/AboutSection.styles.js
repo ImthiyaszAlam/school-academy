@@ -1,3 +1,14 @@
+  titleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    marginBottom: spacing.md,
+  },
+  titleIcon: {
+    width: 24,
+    height: 24,
+    marginRight: spacing.sm,
+  },
 import { StyleSheet } from 'react-native';
 import { colors, spacing, typography, layout } from '../../theme';
 
@@ -50,7 +61,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   title: {
-    ...typography.headingLarge,
+    ...typography.headingMedium,
     color: colors.textPrimary,
     marginBottom: spacing.md,
     textAlign: 'left',
