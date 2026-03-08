@@ -11,7 +11,7 @@ const AcademicsSection = () => {
     <View style={styles.container}> 
       <Text style={styles.title}>Academics</Text>
       <Text style={styles.subtitle}>Explore our academic programs and curriculum designed for excellence.</Text>
-      <View style={{ flexDirection: 'row', width: '100%', marginTop: spacing.lg }}>
+      <View style={{ flexDirection: 'row', width: '100%', marginTop: 0 }}>
         <View style={{ flex: 1, paddingHorizontal: 4 }}>
           <AcademicCard
             image={"https://plus.unsplash.com/premium_photo-1661645390948-1c9d4524ef76?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
@@ -51,7 +51,7 @@ const AcademicsSection = () => {
       </View>
 
       {/* Second row of cards */}
-      <View style={{ flexDirection: 'row', width: '100%', marginTop: spacing.lg }}>
+      <View style={{ flexDirection: 'row', width: '100%' }}>
         <View style={{ flex: 1, paddingHorizontal: 4 }}>
           <AcademicCard
             image={"https://images.unsplash.com/photo-1503428593586-e225b39bddfe?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y291cnNlc3xlbnwwfHwwfHx8MA%3D%3D"}

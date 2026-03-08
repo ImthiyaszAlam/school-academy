@@ -10,6 +10,6 @@ export const spacing = {
 export const layout = {
   sectionHeight: 600,
   sectionPaddingVertical: 16,
-  horizontalPaddingPercent: '10%',
+  horizontalPaddingPercent: '15%',
   borderRadius: 8,
 };
