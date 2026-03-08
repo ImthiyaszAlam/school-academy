@@ -1,0 +1,44 @@
+import { StyleSheet } from 'react-native';
+
+
+const styles = StyleSheet.create({
+	sectionContainer: {
+		flexDirection: 'row',
+		width: '100%',
+		minHeight: 600,
+		backgroundColor: '#3c3838',
+		paddingHorizontal: '10%',
+	},
+	leftContainer: {
+		flex: 1,
+		paddingRight: 16,
+		justifyContent: 'center',
+	},
+	rightContainer: {
+		flex: 1,
+		// Placeholder for image or illustration
+	},
+	heading: {
+		fontSize: 22,
+		fontWeight: 'bold',
+		color: '#1976D2',
+		marginBottom: 8,
+	},
+	paragraph: {
+		fontSize: 15,
+		color: '#333',
+		marginBottom: 18,
+	},
+	cardsGrid: {
+		flexDirection: 'column',
+		gap: 10,
+	},
+	cardsRow: {
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		width: '100%',
+		gap: 0,
+	},
+});
+
+export default styles;

@@ -9,6 +9,7 @@ import AcademicsSection from './src/sections/AcademicsSection/AcademicsSection';
 import AdmissionSection from './src/sections/AdmissionSection/AdmissionSection';
 import BlogSection from './src/sections/BlogSection/BlogSection';
 import TeachersSection from './src/sections/TeachersSection/TeachersSection';
+import PhotoGallerySection from './src/sections/PhotoGallerySection/PhotoGallerySection';
 
 import AboutUsSection from './src/sections/AboutUsSection/AboutUsSection';
 import MissionSection from './src/sections/MissionSection/MissionSection';
@@ -16,6 +17,8 @@ import TestimonialSection from './src/sections/TestimonialSection/TestimonialSec
 
 import { colors } from './src/theme';
 import AboutSection from './src/sections/AboutSection/AboutSection';
+import ChooseUsSection from './src/sections/ChooseUsSection/ChooseUsSection';
+import DepartmentSection from './src/sections/DepartmentSection/DepartmentSection';
 export default function App() {
   // Refs for each section
   const scrollRef = useRef(null);
@@ -53,6 +56,9 @@ export default function App() {
       >
         <View ref={sectionRefs.home}><HomeSection /></View>
         <View ref={sectionRefs.about}><AboutSection /></View>
+        <ChooseUsSection />
+        <DepartmentSection />
+        <PhotoGallerySection />
         <View ref={sectionRefs.academics}><AcademicsSection /></View>
         <View ref={sectionRefs.testimonials}><TestimonialSection /></View>
         <View ref={sectionRefs.admissions}><AdmissionSection /></View>
