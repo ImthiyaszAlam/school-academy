@@ -1,9 +1,8 @@
 
-
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import styles from './ChooseUsSection.style';
 import ChooseUsCard from './components/ChooseUsCard/ChooseUsCard';
+import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
 
 
 const chooseUsData = [
@@ -34,10 +33,9 @@ const ChooseUsSection = () => {
 		<View style={styles.sectionContainer}>
 			{/* Left Side */}
 			<View style={styles.leftContainer}>
-				<Text style={styles.heading}>We are experts & do our best for your goal</Text>
-				<Text style={styles.paragraph}>
-					Our team is dedicated to providing the best service and support to help you reach your goals. We combine expertise, passion, and commitment to ensure your success.
-				</Text>
+
+				<SectionTopBar title="Why Choose Us?" heading='why_choose_us' subTitle='choose_us_desc'  align='left'/>	
+				
 				<View style={styles.cardsGrid}>
 					<View style={styles.cardsRow}>
 						{chooseUsData.slice(0, 2).map((item, idx) => (
@@ -60,6 +58,7 @@ const ChooseUsSection = () => {
 						))}
 					</View>
 				</View>
+				
 			</View>
 			{/* Right Side (empty for now, can add image or illustration) */}
 			<View style={styles.rightContainer} />

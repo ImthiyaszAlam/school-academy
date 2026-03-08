@@ -4,6 +4,7 @@ import React from 'react';
 import { View, Text, Image, useWindowDimensions } from 'react-native';
 import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
 import styles from './AboutSection.styles';
+import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
 
 
 // Use the same favicon as AcademicsSection
@@ -29,19 +30,8 @@ const AboutSection = () => {
           />
         </View>
         <View style={[styles.textContainer, isMobile && styles.textContainerMobile]}>
-          <View style={styles.titleRow}>
-            <Image
-              source={ABOUT_ICON}
-              style={styles.titleIcon}
-              resizeMode="contain"
-              accessible
-              accessibilityLabel="About icon"
-            />
-            <Text style={styles.title}>About </Text>
-          </View>
-          <Text style={styles.paragraph}>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-          </Text>
+          
+          <SectionTopBar title="About Us" heading='about_us' subTitle='lore' align={isMobile ? 'center' : 'left'} />
 
           {/* Center the info cards and text on mobile */}
           <View style={[styles.infoRow, isMobile && styles.infoRowMobile]}>

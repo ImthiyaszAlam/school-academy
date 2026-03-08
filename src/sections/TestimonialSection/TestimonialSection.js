@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Text, Image, ImageBackground } from 'react-native';
 import styles from './TestimonialSection.style';
 import TestimonialCard from './components/TestimonialCard/TestimonialCard';
+import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
 
 const testimonials = [
     {
@@ -63,7 +64,11 @@ const TestimonialSection = () => {
             resizeMode="cover"
         >
             <View style={styles.overlay}>
-                <Text style={styles.title}>Testimonials</Text>
+
+
+                <SectionTopBar title="Testimonials" heading="What Our Students and Teachers Say" subTitle="Hear from our students and teachers about their experiences at our academy. Their stories highlight the supportive environment, engaging curriculum, and the sense of community that makes our academy special." align="left" />
+
+
                 <View style={{ flexDirection: 'column' }}>
                     {[0, 1].map(row => (
                         <View key={row} style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16 }}>
