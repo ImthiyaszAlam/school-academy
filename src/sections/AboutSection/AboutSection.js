@@ -1,6 +1,5 @@
 import AboutInfoCard from './components/AboutInfoCard/AboutInfoCard';
 import Button from '../../components/util/Button';
-import React from 'react';
 import { View, Text, Image, useWindowDimensions } from 'react-native';
 import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
 import styles from './AboutSection.styles';

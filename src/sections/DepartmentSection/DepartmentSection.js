@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import DepartmentCard from './components/DepartmentCard/DepartmentCard';
 import styles from './DepartmentSection.styles';
+import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
 
 const departments = [
   {
@@ -33,8 +34,12 @@ const departments = [
 const DepartmentSection = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Browse our department</Text>
-      <Text style={styles.subtitle}>lorem ipsum dolor sit amet lorem is lore    </Text>
+      <SectionTopBar
+        title="Departments"
+        heading="Our Academic Departments"
+        subTitle="Explore the variety of disciplines we offer."
+        align="center"
+      />
       <View style={styles.cardsRow}>
         {departments.map((dept, idx) => (
           <DepartmentCard
