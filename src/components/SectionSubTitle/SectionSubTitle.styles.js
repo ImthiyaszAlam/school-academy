@@ -4,7 +4,6 @@ export default StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 16,
   },
 
   text: {
@@ -13,6 +12,6 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontWeight: 'normal',
     letterSpacing: 0.5,
-    color: '#FFD700',
+    color: '#000000',
   },
 });

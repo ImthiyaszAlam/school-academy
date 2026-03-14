@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
+    marginBottom: 8,
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -10,11 +11,11 @@ export default StyleSheet.create({
     fontSize: 32,
     fontStyle: 'normal',
     fontWeight: 'bold',
+    textTransform: 'capitalize',
     letterSpacing: 1,
     alignItems: 'center',
     textAlign: 'center',
-    fontWeight: 'normal',
-    letterSpacing: 0.5,
-    color: '#FFD700',
+    fontWeight: 'bold',
+    color: '#000000',
   },
 });

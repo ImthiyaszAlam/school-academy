@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   wrapper: {
     alignItems: 'flex-start',
-    marginBottom: 8,
+    marginBottom: 4,
   },
   container: {
     flexDirection: 'row',
@@ -15,13 +15,12 @@ export default StyleSheet.create({
     marginRight: 8,
   },
   text: {
-    fontSize: 16,
+    fontSize: 12,
     textTransform: 'uppercase',
     letterSpacing: 1,
     color: '#FFD700',
   },
   underline: {
-    marginTop: 4,
     height: 2,
     backgroundColor: '#FFD700',
     borderRadius: 1,
