@@ -1,35 +1,9 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import DepartmentCard from './components/DepartmentCard/DepartmentCard';
 import styles from './DepartmentSection.styles';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
-
-const departments = [
-  {
-    icon: 'flask',
-    iconLib: 'Ionicons',
-    title: 'Science',
-    paragraph: 'Explore the wonders of science with our modern labs and expert faculty.',
-  },
-  {
-    icon: 'calculator',
-    iconLib: 'Ionicons',
-    title: 'Mathematics',
-    paragraph: 'Dive into the world of numbers and logic with our comprehensive curriculum.',
-  },
-  {
-    icon: 'color-palette',
-    iconLib: 'Ionicons',
-    title: 'Arts',
-    paragraph: 'Unleash your creativity in our vibrant arts department.',
-  },
-  {
-    icon: 'football',
-    iconLib: 'Ionicons',
-    title: 'Sports',
-    paragraph: 'Achieve excellence in sports with our top-notch facilities and coaching.',
-  },
-];
+import { departments } from '../../content/departmentData';
 
 const DepartmentSection = () => {
   return (
@@ -41,13 +15,13 @@ const DepartmentSection = () => {
         align="center"
       />
       <View style={styles.cardsRow}>
-        {departments.map((dept, idx) => (
+        {departments.map((dept) => (
           <DepartmentCard
-            key={dept.title}
+            key={dept.id}
             icon={dept.icon}
-            iconLib={dept.iconLib}
-            title={dept.title}
-            paragraph={dept.paragraph}
+            iconLib="Ionicons"
+            title={dept.name}
+            paragraph={dept.description}
             buttonText="Read More"
           />
         ))}
