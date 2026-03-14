@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     gap: spacing.lg,
   },
   navItem: {
-    paddingHorizontal: spacing.lg,
+    paddingHorizontal: 0,
     paddingVertical: spacing.sm,
     borderRadius: layout.borderRadius,
     backgroundColor: 'transparent',

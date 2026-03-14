@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { View, Text, Image, Pressable, Platform } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
+import IconButton from '../util/IconButton/IconButton';
 import styles from './Navbar.styles';
 import logo from '../../../assets/icon.png';
 
@@ -42,15 +43,7 @@ const Navbar = ({ onNavPress }) => {
 
       {/* Right: Apply Now Button */}
       <View style={styles.right}>
-        <Pressable
-          style={({ hovered }) => [styles.applyButton, hovered && styles.applyButtonHovered]}
-          accessibilityRole="button"
-          accessibilityLabel="Apply Now"
-          onPress={() => {}}
-        >
-          <MaterialIcons name="send" size={20} color={styles.applyButtonIcon.color} style={styles.applyButtonIcon} />
-          <Text style={styles.applyButtonText}>Apply Now</Text>
-        </Pressable>
+        <IconButton icon="send" text="Apply Now" onPress={() => {}} />
       </View>
     </View>
   );
