@@ -7,12 +7,12 @@ import { styles } from './SectionTopBar.styles';
 
 
 
-const SectionTopBar = ({ title, heading, subTitle, align = 'center' }) => {
+const SectionTopBar = ({ title, heading, subTitle, align = 'center' ,titleStyle,headingStyle,subTitleStyle}) => {
   return (
     <View style={align === 'center' ? styles.centerContainer : styles.leftContainer}>
-      {title ? <SectionTitle title={title} align={align} /> : null}
-      {heading ? <SectionHeading heading={heading} align={align} /> : null}
-      {subTitle ? <SectionSubTitle subtitle={subTitle} align={align} /> : null}
+      {title ? <SectionTitle title={title} align={align} style={titleStyle} /> : null}
+      {heading ? <SectionHeading heading={heading} align={align} style={headingStyle} /> : null}
+      {subTitle ? <SectionSubTitle subtitle={subTitle} align={align} style={subTitleStyle} /> : null}
     </View>
   );
 };
