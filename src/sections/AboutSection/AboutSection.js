@@ -1,4 +1,5 @@
 import AboutInfoCard from './components/AboutInfoCard/AboutInfoCard';
+import { faSchool, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/util/Button';
 import { View, Text, Image, useWindowDimensions } from 'react-native';
 import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
@@ -36,14 +37,14 @@ const AboutSection = () => {
           <View style={[styles.infoRow, isMobile && styles.infoRowMobile]}>
             <View style={[styles.infoColumnLeft, isMobile && styles.infoColumnLeftMobile]}>
               <AboutInfoCard
-                icon={ABOUT_ICON}
-                title="About Our School"
+                icon={faSchool}
+                title="Our Mission"
                 subtitle="Empowering students for a brighter future"
               />
               <AboutInfoCard
-                icon={ABOUT_ICON}
-                title="About Our School"
-                subtitle="Empowering students for a brighter future"
+                icon={faUserGraduate}
+                title="Academic Excellence"
+                subtitle="Dedicated to holistic education and personal growth"
               />
             </View>
             <View style={[styles.infoColumnRight, isMobile && styles.infoColumnRightMobile]}>
