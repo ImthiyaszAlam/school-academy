@@ -3,9 +3,12 @@ import { View, Text } from 'react-native';
 import styles from './SectionHeading.style';
 
 const SectionHeading = ({ heading, align = 'center' }) => {
+  const containerStyle = align === 'left' ? styles.containerLeft : styles.container;
+  const textStyle = align === 'left' ? styles.textLeft : styles.text;
+
   return (
-    <View style={[styles.container, align === 'left' && { justifyContent: 'flex-start' }] }>
-      <Text style={[styles.text, align === 'left' && { textAlign: 'left', alignSelf: 'flex-start' }]}>{heading}</Text>
+    <View style={containerStyle}>
+      <Text style={textStyle}>{heading}</Text>
     </View>
   );
 };

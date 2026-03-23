@@ -34,7 +34,7 @@ const ChooseUsSection = () => {
 			{/* Left Side */}
 			<View style={styles.leftContainer}>
 
-				<SectionTopBar title="Why Choose Us?" heading='why_choose_us' subTitle='choose_us_desc'  align='left'/>	
+				<SectionTopBar title="Why Choose Us?" heading='Excellence in Education & Student Growth' subTitle='Discover what sets our academy apart. We combine expert guidance, supportive community, and innovative learning to help every student achieve their full potential.'  align='left'/>	
 				
 				<View style={styles.cardsGrid}>
 					<View style={styles.cardsRow}>

@@ -14,6 +14,7 @@ export default StyleSheet.create({
     marginBottom: 16,
   },
   galleryRow: {
+    marginTop:30,
     flexDirection: 'row',
     width: '100%',
     justifyContent: 'space-between',
