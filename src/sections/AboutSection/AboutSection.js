@@ -30,8 +30,12 @@ const AboutSection = () => {
           />
         </View>
         <View style={[styles.textContainer, isMobile && styles.textContainerMobile]}>
-          
-          <SectionTopBar title="About Us" heading='about_us' subTitle='lore' align={isMobile ? 'center' : 'left'} />
+          <SectionTopBar
+            title="About Our School"
+            heading="Empowering Students & Inspiring Futures"
+            subTitle="Learn about our mission and vision. We nurture every student for lifelong success."
+            align={isMobile ? 'center' : 'left'}
+          />
 
           {/* Center the info cards and text on mobile */}
           <View style={[styles.infoRow, isMobile && styles.infoRowMobile]}>
