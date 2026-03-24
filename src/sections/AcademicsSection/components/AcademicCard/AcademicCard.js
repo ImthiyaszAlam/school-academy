@@ -30,7 +30,7 @@ const AcademicCard = ({
         </View>
       </View>
       <Text style={styles.title}>{title}</Text>
-      <Text style={styles.description}>{description}</Text>
+      <Text style={styles.description} numberOfLines={2}>{description}</Text>
       <View style={styles.bottomSection}>
         <View style={[styles.bottomItem, styles.bottomItemLeft]}>
           <DummyIcon style={styles.icon} />

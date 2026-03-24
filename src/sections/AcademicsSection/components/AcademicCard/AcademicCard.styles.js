@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface || '#fff',
     borderTopLeftRadius: 16,
     borderTopRightRadius: 16,
+    height:300,
     borderBottomRightRadius: 16,
     borderBottomLeftRadius: 0,
     padding: spacing.md,
@@ -56,6 +57,7 @@ const styles = StyleSheet.create({
     color: colors.text,
     marginBottom: spacing.sm,
     textAlign: 'left',
+    overflow: 'hidden',
   },
   bottomSection: {
     flexDirection: 'row',
