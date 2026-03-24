@@ -10,7 +10,11 @@ import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
 const AcademicsSection = () => {
   return (
     <View style={styles.container}> 
-    <SectionTopBar title="Academics" heading='academics' subTitle='academics_desc' /> 
+    <SectionTopBar 
+      title="Our Academic Programs" 
+      heading="Diverse Streams for Every Aspiration" 
+      subTitle="Explore our comprehensive academic offerings designed to develop critical thinking, creativity, and professional excellence across multiple disciplines." 
+    /> 
 
     
       <View style={{ flexDirection: 'row', width: '100%', marginTop: 0 }}>
