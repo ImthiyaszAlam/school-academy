@@ -48,3 +48,10 @@ export const aboutUsSectionHeader = {
   subTitle: 'Discover our values and commitment to education.',
   align: 'center',
 };
+
+export const highlightSectionHeader = {
+  title: 'Why Our Academy',
+  heading: 'Key Highlights of Our Institution',
+  subTitle: 'Discover the features that make our academy a premier educational destination.',
+  align: 'center',
+};

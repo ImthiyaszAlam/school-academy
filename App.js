@@ -19,6 +19,7 @@ import { colors } from './src/theme';
 import AboutSection from './src/sections/AboutSection/AboutSection';
 import ChooseUsSection from './src/sections/ChooseUsSection/ChooseUsSection';
 import DepartmentSection from './src/sections/DepartmentSection/DepartmentSection';
+import HighlightSections from './src/sections/HighlightSections/HighlightSections';
 export default function App() {
   // Refs for each section
   const scrollRef = useRef(null);
@@ -59,6 +60,7 @@ export default function App() {
         <ChooseUsSection />
         <DepartmentSection />
         <PhotoGallerySection />
+        <HighlightSections />
         <View ref={sectionRefs.academics}><AcademicsSection /></View>
         <View ref={sectionRefs.testimonials}><TestimonialSection /></View>
         <View ref={sectionRefs.admissions}><AdmissionSection /></View>
