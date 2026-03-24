@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import styles from './ChooseUsSection.style';
 import ChooseUsCard from './components/ChooseUsCard/ChooseUsCard';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
-
+import { chooseUsSectionHeader } from '../../content/sectionheaderdata';
 
 const chooseUsData = [
 	{
@@ -34,7 +34,7 @@ const ChooseUsSection = () => {
 			{/* Left Side */}
 			<View style={styles.leftContainer}>
 
-				<SectionTopBar title="Why Choose Us?" heading='Excellence in Education & Student Growth' subTitle='Discover what sets our academy apart. We combine expert guidance, supportive community, and innovative learning to help every student achieve their full potential.'  align='left'/>	
+				<SectionTopBar title={chooseUsSectionHeader.title} heading={chooseUsSectionHeader.heading} subTitle={chooseUsSectionHeader.subTitle} align={chooseUsSectionHeader.align}/>	
 				
 				<View style={styles.cardsGrid}>
 					<View style={styles.cardsRow}>

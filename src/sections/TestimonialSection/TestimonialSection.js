@@ -4,6 +4,7 @@ import { View, Text, Image, ImageBackground } from 'react-native';
 import styles from './TestimonialSection.style';
 import TestimonialCard from './components/TestimonialCard/TestimonialCard';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
+import { testimonialSectionHeader } from '../../content/sectionheaderdata';
 
 const testimonials = [
     {
@@ -64,7 +65,7 @@ const TestimonialSection = () => {
             resizeMode="cover"
         >
             <View style={styles.overlay}>
-                <SectionTopBar title="Testimonials" heading="What Our Students and Teachers Say" subTitle="Hear from our students and teachers about their experiences at our academy. Their stories highlight the supportive environment, engaging curriculum, and the sense of community that makes our academy special." align="center" />
+                <SectionTopBar title={testimonialSectionHeader.title} heading={testimonialSectionHeader.heading} subTitle={testimonialSectionHeader.subTitle} align={testimonialSectionHeader.align} />
                 <View style={{ flexDirection: 'column' }}>
                     {[0, 1].map(row => (
                         <View key={row} style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16 }}>

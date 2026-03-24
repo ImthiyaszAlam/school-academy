@@ -4,15 +4,16 @@ import DepartmentCard from './components/DepartmentCard/DepartmentCard';
 import styles from './DepartmentSection.styles';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
 import { departments } from '../../content/departmentData';
+import { departmentSectionHeader } from '../../content/sectionheaderdata';
 
 const DepartmentSection = () => {
   return (
     <View style={styles.container}>
       <SectionTopBar
-        title="Departments"
-        heading="Our Academic Departments"
-        subTitle="Explore the variety of disciplines we offer."
-        align="center"
+        title={departmentSectionHeader.title}
+        heading={departmentSectionHeader.heading}
+        subTitle={departmentSectionHeader.subTitle}
+        align={departmentSectionHeader.align}
       />
       <View style={styles.cardsRow}>
         {departments.map((dept) => (

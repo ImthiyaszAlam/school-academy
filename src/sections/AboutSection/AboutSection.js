@@ -5,6 +5,7 @@ import { View, Text, Image, useWindowDimensions } from 'react-native';
 import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
 import styles from './AboutSection.styles';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
+import { aboutSectionHeader } from '../../content/sectionheaderdata';
 
 
 // Use the same favicon as AcademicsSection
@@ -31,9 +32,9 @@ const AboutSection = () => {
         </View>
         <View style={[styles.textContainer, isMobile && styles.textContainerMobile]}>
           <SectionTopBar
-            title="About Our School"
-            heading="Empowering Students & Inspiring Futures"
-            subTitle="Learn about our mission and vision. We nurture every student for lifelong success."
+            title={aboutSectionHeader.title}
+            heading={aboutSectionHeader.heading}
+            subTitle={aboutSectionHeader.subTitle}
             align={isMobile ? 'center' : 'left'}
           />
 

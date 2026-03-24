@@ -6,14 +6,15 @@ import styles from './AcademicsSection.styles';
 import { spacing, layout } from '../../theme';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
 import { academicsData } from '../../content/academicsData';
+import { academicsSectionHeader } from '../../content/sectionheaderdata';
 
 const AcademicsSection = () => {
   return (
     <View style={styles.container}> 
     <SectionTopBar 
-      title="Our Academic Programs" 
-      heading="Diverse Streams for Every Aspiration" 
-      subTitle="Explore our comprehensive academic offerings designed to develop critical thinking, creativity, and professional excellence across multiple disciplines." 
+      title={academicsSectionHeader.title} 
+      heading={academicsSectionHeader.heading} 
+      subTitle={academicsSectionHeader.subTitle} 
     /> 
 
     {/* Grid layout for academic cards - 3 columns */}
