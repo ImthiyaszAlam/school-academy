@@ -3,7 +3,7 @@
 export const teachersSectionHeader = {
   title: 'Our Teachers',
   heading: 'Meet Our Expert Faculty',
-  subTitle: 'Dedicated educators guiding every student.',
+  subTitle: 'Dedicated educators guiding every student.Dedicated educators guiding every \n student.Dedicated educators guiding every student.Dedicated educators guiding every student.',
   align: 'center',
 };
 

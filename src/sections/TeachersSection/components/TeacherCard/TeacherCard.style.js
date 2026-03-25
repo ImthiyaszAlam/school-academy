@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
 		paddingTop: 0,
 	},
 	name: {
-		...typography.headingMedium,
+		...typography.headingSmall,
 		color: colors.textPrimary,
 		textAlign: 'left',
 	},

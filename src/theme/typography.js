@@ -13,6 +13,12 @@ export const typography = {
     fontWeight: '600',
     color: colors.textPrimary,
   },
+  
+  headingSmall: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: colors.textPrimary,
+  },
   body: {
     fontSize: 16,
     fontWeight: '400',

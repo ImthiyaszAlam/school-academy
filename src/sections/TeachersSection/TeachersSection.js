@@ -21,7 +21,10 @@ const TeachersSection = () => {
       <View style={styles.row}>
         {teachers.map((teacher, idx) => (
           <View style={styles.cardWrapper} key={idx}>
-            <TeacherCard {...teacher} />
+            <TeacherCard
+              {...teacher}
+              designation={teacher.designation || teacher.subject}
+            />
           </View>
         ))}
       </View>
