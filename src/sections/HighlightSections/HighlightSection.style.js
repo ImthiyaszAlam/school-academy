@@ -7,6 +7,19 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.lg,
     backgroundColor: colors.background,
   },
+  imageBackground: {
+    width: '100%',
+    paddingVertical: spacing.lg,
+  },
+  contentLayer: {
+    width: '100%',
+    flex: 1,
+    position: 'relative',
+  },
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.55)',
+  },
   highlightGrid: {
     flexDirection: 'row',
     flexWrap: 'nowrap',

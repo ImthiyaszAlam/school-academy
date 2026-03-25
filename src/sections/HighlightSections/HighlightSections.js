@@ -14,35 +14,39 @@ const HighlightSections = () => {
   return (
     <ImageBackground
       source={{ uri: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600&q=80' }}
-      style={styles.container}
+      style={styles.imageBackground}
+      resizeMode="cover"
     >
-      <SectionWrapper style={styles.container}>
-        <SectionTopBar
-          title={highlightSectionHeader.title}
-          heading={highlightSectionHeader.heading}
-          subTitle={highlightSectionHeader.subTitle}
-          align={highlightSectionHeader.align}
-        />
+      <View style={styles.contentLayer}>
+        <View style={styles.overlay} pointerEvents="none" />
+        <SectionWrapper>
+          <SectionTopBar
+            title={highlightSectionHeader.title}
+            heading={highlightSectionHeader.heading}
+            subTitle={highlightSectionHeader.subTitle}
+            align={highlightSectionHeader.align}
+          />
 
-        {/* Highlight Cards Grid */}
-        <View style={styles.highlightGrid}>
-          {highlightData.map((highlight) => (
-            <View
-              key={highlight.id}
-              style={[
-                styles.highlightCardWrapper,
-                isMobile && styles.highlightCardWrapperMobile,
-              ]}
-            >
-              <HighlightCard
-                icon={highlight.icon}
-                number={highlight.number}
-                title={highlight.title}
-              />
-            </View>
-          ))}
-        </View>
-      </SectionWrapper>
+          {/* Highlight Cards Grid */}
+          <View style={styles.highlightGrid}>
+            {highlightData.map((highlight) => (
+              <View
+                key={highlight.id}
+                style={[
+                  styles.highlightCardWrapper,
+                  isMobile && styles.highlightCardWrapperMobile,
+                ]}
+              >
+                <HighlightCard
+                  icon={highlight.icon}
+                  number={highlight.number}
+                  title={highlight.title}
+                />
+              </View>
+            ))}
+          </View>
+        </SectionWrapper>
+      </View>
     </ImageBackground>
   );
 };
