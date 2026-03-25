@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, TextInput, Alert } from 'react-native';
 import styles from './ContactCard.style';
+import AppButton from '../../../../components/util/AppButton';
 
 const ContactCard = ({ onSend }) => {
   const [name, setName] = useState('');
@@ -50,9 +51,13 @@ const ContactCard = ({ onSend }) => {
           <TextInput value={message} onChangeText={setMessage} placeholder="Message" placeholderTextColor="#9E9E9E" style={[styles.input, styles.textArea]} multiline numberOfLines={4} textAlignVertical="top" />
         </View>
 
-        <TouchableOpacity style={styles.sendButton} onPress={handleSend} accessibilityLabel="Send contact">
-          <Text style={styles.sendButtonText}>Send</Text>
-        </TouchableOpacity>
+        <AppButton
+          onPress={handleSend}
+          title="Send"
+          style={styles.sendButton}
+          textStyle={styles.sendButtonText}
+          accessibilityLabel="Send contact"
+        />
       </View>
     </View>
   );

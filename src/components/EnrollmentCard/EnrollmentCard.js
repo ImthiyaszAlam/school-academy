@@ -1,8 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Text, TextInput, View } from 'react-native';
 import styles from './EnrollmentCard.style';
-import Button from '../util/Button';
-
+import AppButton from '../util/AppButton';
 const DEFAULT_SUBTITLE = 'Fill in your details to get started.';
 
 const EnrollmentCard = ({
@@ -91,7 +90,7 @@ const EnrollmentCard = ({
           />
         </View>
 
-        <Button
+        <AppButton
           title="Enroll Now"
           onPress={handleEnrollPress}
           style={styles.enrollButton}

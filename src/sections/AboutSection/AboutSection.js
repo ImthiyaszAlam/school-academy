@@ -1,6 +1,6 @@
 import AboutInfoCard from './components/AboutInfoCard/AboutInfoCard';
 import { faSchool, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
-import Button from '../../components/util/Button';
+import Button from '../../components/util/AppButton';
 import { View, Text, Image, useWindowDimensions } from 'react-native';
 import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
 import styles from './AboutSection.styles';

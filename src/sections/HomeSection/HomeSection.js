@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
-import Button from '../../components/util/Button';
+import Button from '../../components/util/AppButton';
 import styles from './HomeSection.styles';
 import { colors, spacing, typography, layout } from '../../theme';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';

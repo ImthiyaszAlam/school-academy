@@ -5,9 +5,10 @@ export default StyleSheet.create({
   card: {
     width: '100%',
     backgroundColor: colors.surface || '#FFFFFF',
-    borderTopLeftRadius: 12,
-    borderTopRightRadius: 12,
-    borderRadius: 12,
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
+    borderBottomLeftRadius:0,
+    borderBottomRightRadius:50,
     overflow: 'hidden',
     paddingBottom: spacing.lg,
     shadowColor: '#000',
