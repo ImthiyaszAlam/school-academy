@@ -1,10 +1,8 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import styles from './PhotoGallerySection.styles';
-import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import SectionSubTitle from '../../components/SectionSubTitle/SectionSubTitle';
-import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
+import { photoGallerySectionHeader } from '../../content/sectionheaderdata';
 
 const photos = [
   { uri: "https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
@@ -27,11 +25,12 @@ const PhotoGallerySection = () => {
 
   return (
     <View style={styles.container}>
-      <SectionTitle title="Photo Gallery" />
-      <SectionHeading heading="Capturing Moments, Sharing Memories" />
-      <SectionSubTitle subtitle="A collection of memorable moments he image section showcases a curated gallery of memorable moments and highlights from our academy. Each photo captures the vibrant spirit, achievements, and daily life of our students and staff. Explore the gallery to get a glimpse of our engaging activities, special events, and the welcoming environment that defines our community." />
-
-
+      <SectionTopBar
+        title={photoGallerySectionHeader.title}
+        heading={photoGallerySectionHeader.heading}
+        subTitle={photoGallerySectionHeader.subTitle}
+        align={photoGallerySectionHeader.align}
+      />
       <View style={styles.galleryRow}>
         {[0, 1, 2].map((sectionIdx) => (
           <View style={styles.gallerySection} key={sectionIdx}>

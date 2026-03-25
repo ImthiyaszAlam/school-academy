@@ -1,12 +1,13 @@
 
 import { StyleSheet } from 'react-native';
+import { colors } from '../../theme';
 
 export default StyleSheet.create({
   container: {
     paddingHorizontal:'15%',
     paddingVertical: 24,
     alignItems: 'center',
-    backgroundColor: '#363535',
+    backgroundColor: colors.background,
   },
   title: {
     fontSize: 24,

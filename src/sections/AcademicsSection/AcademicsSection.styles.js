@@ -5,7 +5,7 @@ export default StyleSheet.create({
   container: {
     paddingHorizontal: layout.horizontalPaddingPercent,
     minHeight: layout.sectionHeight,
-    backgroundColor: colors.academicsBg,
+    backgroundColor: colors.background,
     justifyContent: 'center',
     alignItems: 'center',
     padding: spacing.lg,

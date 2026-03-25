@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native';
-
+import { colors } from '../../theme';
 
 const styles = StyleSheet.create({
 	sectionContainer: {
 		flexDirection: 'row',
 		width: '100%',
 		minHeight: 600,
-		backgroundColor: '#3c3838',
+		backgroundColor: colors.primary,
 		paddingHorizontal: '10%',
 	},
 	leftContainer: {

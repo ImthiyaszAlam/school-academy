@@ -55,3 +55,10 @@ export const highlightSectionHeader = {
   subTitle: 'Discover the features that make our academy a premier educational destination.',
   align: 'center',
 };
+
+export const photoGallerySectionHeader = {
+  title: 'Photo Gallery',
+  heading: 'Moments from Our Academy',
+  subTitle: 'A A glimpse into student life and inspiring A glimpse into student life and inspiringA glimpse into student life and inspiring glimpse into student life and inspiring learning experiences.',
+  align: 'center',
+};

@@ -59,9 +59,10 @@ export default function App() {
     
         <HighlightSections />
         <ChooseUsSection />
-        <PhotoGallerySection />
         <View ref={sectionRefs.academics}><AcademicsSection /></View>
         <View ref={sectionRefs.testimonials}><TestimonialSection /></View>
+        
+        <PhotoGallerySection />
         <View ref={sectionRefs.admissions}><AdmissionSection /></View>
         <View ref={sectionRefs.blog}><BlogSection /></View>
         <View ref={sectionRefs.teachers}><TeachersSection /></View>

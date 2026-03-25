@@ -4,29 +4,7 @@ import styles from './ChooseUsSection.style';
 import ChooseUsCard from './components/ChooseUsCard/ChooseUsCard';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
 import { chooseUsSectionHeader } from '../../content/sectionheaderdata';
-
-const chooseUsData = [
-	{
-		icon: '⭐',
-		title: 'Expert Team',
-		subtitle: 'Qualified professionals',
-	},
-	{
-		icon: '🎯',
-		title: 'Goal Oriented',
-		subtitle: 'Focus on your success',
-	},
-	{
-		icon: '🤝',
-		title: 'Support',
-		subtitle: 'Always here for you',
-	},
-	{
-		icon: '🚀',
-		title: 'Growth',
-		subtitle: 'Achieve more',
-	},
-];
+import { chooseUsData } from '../../content/chooseUsData';
 
 const ChooseUsSection = () => {
 	return (
