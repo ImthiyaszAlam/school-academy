@@ -2,7 +2,7 @@ const founders = [
   {
     id: '1',
     quote:
-      "Our school was founded on the belief that every student deserves an education that sparks curiosity and strength of character. Seeing our students thrive confirms that vision.",
+      " Our school was founded on the belief that every student deserves an education that sparks curiosity and strength of character. Seeing our students thrive confirms that vision. Our school was founded on the belief that every student deserves an education that sparks curiosity and strength of character. Seeing our students thrive confirms that vision. Our school was founded on the belief that every student deserves an education that sparks curiosity and strength of character. Seeing our students thrive confirms that vision. Our school was founded on the belief that every student deserves an education that sparks curiosity and strength of character. Seeing our students thrive confirms that vision.Our school was founded on the belief that every student deserves an education that sparks curiosity and strength of character. Seeing our students thrive confirms that vision.Our school was founded on the belief that every student deserves an education that sparks curiosity and strength of character. Seeing our students thrive confirms that vision.Our school was founded on the belief that every student deserves an education that sparks curiosity and strength of character. Seeing our students thrive confirms that vision.",
     name: 'Dr. Amelia Hart',
     role: 'Founder & Principal',
     image:
@@ -11,7 +11,7 @@ const founders = [
   {
     id: '2',
     quote:
-      "Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.",
+      "Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead. Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead. Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.",
     name: 'Mr. Raj Patel',
     role: 'Head of Academics',
     image:
@@ -19,21 +19,12 @@ const founders = [
   },
   {
     id: '3',
-    quote:
-      "We build confidence by celebrating effort and progress — our teachers design experiences that turn curiosity into mastery.",
+   quote:
+      "Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead. Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead. Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.Great teaching opens doors — we focus on mentoring, creativity, and real-world problem solving so students enter the world ready to lead.",
     name: 'Ms. Sofia Martinez',
     role: 'Senior Teacher',
     image:
       'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=800&q=80&auto=format&fit=crop',
-  },
-  {
-    id: '4',
-    quote:
-      "A community that supports learners makes extraordinary outcomes possible. We're proud of the partnerships we've built with families.",
-    name: 'Dr. Benjamin Lee',
-    role: 'Co-Founder',
-    image:
-      'https://images.unsplash.com/photo-1545420331-9d2f6a2b5b2d?w=800&q=80&auto=format&fit=crop',
   },
 ];
 

@@ -62,3 +62,10 @@ export const photoGallerySectionHeader = {
   subTitle: 'A A glimpse into student life and inspiring A glimpse into student life and inspiringA glimpse into student life and inspiring glimpse into student life and inspiring learning experiences.',
   align: 'center',
 };
+
+export const foundersSectionHeader = {
+  title: 'Our Team',
+  heading: 'Meet Our Team of Visionary Founders',
+  subTitle: 'Leaders who shaped our vision and continue to guide our academy.',
+  align: 'center',
+};

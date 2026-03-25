@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import styles from './FoundersSection.styles';
+import styles from './terstimonialItem.style';
 
 const TestimonialItem = ({ item, width }) => {
   return (
     <View style={[styles.slide, { width }]}> 
       <View style={styles.contentWrapper}>
         <View style={styles.left}>
-          <Text style={styles.quote} numberOfLines={6}>
+          <Text style={styles.quote} numberOfLines={20}>
             “{item.quote}”
           </Text>
         </View>
