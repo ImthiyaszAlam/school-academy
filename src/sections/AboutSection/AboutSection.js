@@ -54,16 +54,16 @@ const AboutSection = () => {
             </View>
             <View style={[styles.infoColumnRight, isMobile && styles.infoColumnRightMobile]}>
               <Text style={styles.paragraph}>
-                Our school is dedicated to providing a nurturing environment where students can excel academically and personally. We believe in holistic education and strive to empower every student for a brighter future.
+                Our school provides a supportive environment where every student can thrive academically and grow with confidence. We emphasize meaningful learning built on strong foundations. Through a well-rounded approach, we nurture curiosity, strengthen core skills, and encourage critical thinking and communication.
               </Text>
             </View>
           </View>
 
-          <View style={{ flexDirection: 'row', marginTop: 24 }}>
+          <View style={styles.actionRow}>
             <Button
               title="Learn More"
               onPress={() => {}}
-              style={{ marginRight: 16 }}
+              style={styles.learnMoreButton}
             />
             <Button
               title="Contact Us"

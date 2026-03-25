@@ -1,9 +1,12 @@
 import { StyleSheet } from 'react-native';
 import { colors, spacing, typography, layout } from '../../theme';
+import { Dimensions } from 'react-native';
+
+const { height } = Dimensions.get('window');
 
 export default StyleSheet.create({
   background: {
-    height: layout.sectionHeight,
+    height: height - 80,
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',

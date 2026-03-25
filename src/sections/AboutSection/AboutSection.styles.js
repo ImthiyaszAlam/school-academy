@@ -4,7 +4,14 @@ import { colors, spacing, typography, layout } from '../../theme';
 
 const styles = StyleSheet.create({
   sectionContainer: {
-    backgroundColor: colors.aboutbg,
+    backgroundColor: colors.background,
+  },
+  actionRow: {
+    flexDirection: 'row',
+    marginTop: 2,
+  },
+  learnMoreButton: {
+    marginRight: 16,
   },
   contentContainer: {
     flexDirection: 'row',
@@ -88,7 +95,7 @@ const styles = StyleSheet.create({
   paragraph: {
     ...typography.body,
     color: colors.textSecondary,
-    textAlign: 'left',
+    textAlign: 'justify',
   },
 });
 
