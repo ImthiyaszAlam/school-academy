@@ -8,13 +8,6 @@ export const highlightData = [
     description: "Learn from experienced and dedicated educators committed to student success."
   },
   {
-    id: 2,
-    icon: '👨‍🏫',
-    number: '100+',
-    title: "Expert Teachers",
-    description: "State-of-the-art classrooms, labs, and libraries equipped with latest technology."
-  },
-  {
     id: 3,
     icon: '📚',
     number: '50+',

@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   },
   aboutInfoCardSubtitle: {
     ...typography.body,
-    color: colors.textSecondary,
+    color: colors.textTertiary,
   },
 });
 

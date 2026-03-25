@@ -30,8 +30,9 @@ const styles = StyleSheet.create({
 		marginBottom: 18,
 	},
 	cardsGrid: {
+		marginTop:16,
 		flexDirection: 'column',
-		gap: 10,
+		gap: 5,
 	},
 	cardsRow: {
 		flexDirection: 'row',

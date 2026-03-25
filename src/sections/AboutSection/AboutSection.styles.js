@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
   },
   paragraph: {
     ...typography.body,
-    color: colors.textSecondary,
+    color: colors.textTertiary,
     textAlign: 'justify',
   },
 });

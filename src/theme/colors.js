@@ -7,8 +7,13 @@ export const colors = {
   background: '#FAF9F6',
   background2: '#F5F5F5',
   surface: '#FFFFFF',
+
+
   textPrimary: '#212121',
-  textSecondary: '#757575',
+  textSecondary: '#FFD700',
+  textTertiary: '#757575',
+
+  
   white: '#FFFFFF',
   black: '#000000',
   border: '#E0E0E0',

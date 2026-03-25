@@ -67,7 +67,6 @@ export default function App() {
         
         <ChooseUsSection />
         <View ref={sectionRefs.teachers}><TeachersSection /></View>
-        <View ref={sectionRefs.mission}><MissionSection /></View>
       </ScrollView>
     </View>
   );

@@ -3,6 +3,7 @@ import { colors, spacing, typography } from '../../../../theme';
 
 export default StyleSheet.create({
   card: {
+    height: 200,
     backgroundColor: colors.surface,
     borderRadius: 32,
     borderBottomLeftRadius: 0,
@@ -22,13 +23,14 @@ export default StyleSheet.create({
     marginBottom: spacing.xs,
   },
   star: {
-    color: colors.accent,
+    color: colors.textSecondary,
     fontSize: 18,
     marginRight: 2,
   },
   paragraph: {
     ...typography.body,
-    color: colors.textSecondary,
+
+    color: colors.textTertiary,
     marginBottom: spacing.sm,
     minHeight: 60,
   },

@@ -1,13 +1,14 @@
 import { StyleSheet } from 'react-native';
 
 const CARD_HEIGHT = 120;
+import { colors } from '../../../../theme';
 
 const styles = StyleSheet.create({
   cardContainer: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#722828',
+    backgroundColor: colors.background,
     margin: 6,
     borderTopLeftRadius: CARD_HEIGHT / 2,
     borderTopRightRadius: CARD_HEIGHT / 2,
@@ -40,12 +41,12 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 15,
     fontWeight: 'bold',
-    color: '#1976D2',
+    color: colors.textPrimary,
     marginBottom: 2,
   },
   subtitle: {
     fontSize: 12,
-    color: '#757575',
+    color: colors.textTertiary,
   },
 });
 
