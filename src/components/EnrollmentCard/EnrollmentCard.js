@@ -26,12 +26,40 @@ const EnrollmentCard = ({
   );
 
   const handleEnrollPress = () => {
-    if (typeof onEnroll === 'function') onEnroll(payload);
-    if (typeof onClose === 'function') onClose();
+    // 1. Validate fields
+    if (!name || !phoneNumber || !course) {
+      alert('Please fill all required fields');
+      return;
+    }
+
+    if (phoneNumber.length < 10) {
+      alert('Enter a valid phone number');
+      return;
+    }
+
+    // 2. Prepare WhatsApp message
+    const text = `Hi, I want to enroll.
+
+Name: ${name}
+Phone: ${phoneNumber}
+Course: ${course}
+Message: ${message || 'N/A'}`;
+
+    const url = `https://wa.me/9898989898?text=${encodeURIComponent(text)}`;
+
+    // 3. Open WhatsApp
+    Linking.openURL(url).catch(() => {
+      alert('Unable to open WhatsApp');
+    });
+
+    // 4. Close modal
+    if (typeof onClose === 'function') {
+      onClose();
+    }
   };
 
   return (
-    <View style={[styles.card, style]}>
+    <View style={[style, styles.card]}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Start your Enrollment</Text>
         <Text style={styles.headerSubtitle}>{subtitle}</Text>

@@ -3,7 +3,9 @@ import { colors, spacing, typography } from '../../theme';
 
 export default StyleSheet.create({
   card: {
-    width:300,
+    width: 350,
+    alignSelf: 'flex-end',
+    marginRight: spacing.lg,
     backgroundColor: colors.surface || '#FFFFFF',
     borderTopLeftRadius: 50,
     borderTopRightRadius: 50,
