@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, useWindowDimensions, ImageBackground } from 'react-native';
+import { View, useWindowDimensions, ImageBackground } from 'react-native';
 import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
 import SectionTopBar from '../../components/SectionTopBar/SectionTopBar';
+import HighlightCard from './components/HighlightCard/HighlightCard';
 import { highlightData } from '../../content/highlightData';
 import { highlightSectionHeader } from '../../content/sectionheaderdata';
 import styles from './HighlightSection.style';
@@ -29,15 +30,15 @@ const HighlightSections = () => {
             <View
               key={highlight.id}
               style={[
-                styles.highlightCard,
-                isMobile && styles.highlightCardMobile,
+                styles.highlightCardWrapper,
+                isMobile && styles.highlightCardWrapperMobile,
               ]}
             >
-              <Text style={styles.iconContainer}>{highlight.icon}</Text>
-              <Text style={styles.highlightTitle}>{highlight.title}</Text>
-              <Text style={styles.highlightDescription}>
-                {highlight.description}
-              </Text>
+              <HighlightCard
+                icon={highlight.icon}
+                number={highlight.number}
+                title={highlight.title}
+              />
             </View>
           ))}
         </View>
