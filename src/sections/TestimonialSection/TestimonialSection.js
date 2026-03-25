@@ -14,8 +14,16 @@ const TestimonialSection = () => {
             style={styles.backgroundImage}
             resizeMode="cover"
         >
-            <View style={styles.overlay}>
-                <SectionTopBar title={testimonialSectionHeader.title} heading={testimonialSectionHeader.heading} subTitle={testimonialSectionHeader.subTitle} align={testimonialSectionHeader.align} />
+            <View style={styles.overlay} pointerEvents="none" />
+            <View style={styles.contentWrapper}>
+                <SectionTopBar
+                    title={testimonialSectionHeader.title}
+                    heading={testimonialSectionHeader.heading}
+                    subTitle={testimonialSectionHeader.subTitle}
+                    align={testimonialSectionHeader.align}
+                    headingStyle={styles.headingWhite}
+                    subTitleStyle={styles.subTitleWhite}
+                />
                 <View style={{ flexDirection: 'column' }}>
                     {[0, 1].map(row => (
                         <View key={row} style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16 }}>

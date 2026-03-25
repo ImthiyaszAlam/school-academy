@@ -3,27 +3,30 @@ import { colors, spacing, typography, layout } from '../../theme';
 
 
 export default StyleSheet.create({
-    container: {
-        paddingVertical: '10%',
-    },
     backgroundImage: {
-        flex: 1,
         width: '100%',
-        justifyContent: 'center',
-        alignItems: 'center',
+        height: layout.sectionHeight,
     },
     overlay: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: 'rgba(0,0,0,0.5)', // semi-transparent black
+    },
+    contentWrapper: {
         flex: 1,
         width: '100%',
-        backgroundColor: 'rgba(0,0,0,0.5)', // semi-transparent black
         padding: spacing.md,
         paddingHorizontal: '10%',
         justifyContent: 'center',
+        alignItems: 'center',
     },
-    title: {
-        ...typography.headingMedium,
-        color: colors.textPrimary,
-        marginBottom: spacing.sm,
-        textAlign: 'center',
+    headingWhite: {
+        color: colors.white,
+    },
+    subTitleWhite: {
+        color: colors.white,
     },
 });
