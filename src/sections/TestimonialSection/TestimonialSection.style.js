@@ -13,7 +13,8 @@ export default StyleSheet.create({
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: 'rgba(0,0,0,0.5)', // semi-transparent black
+        backgroundColor: 'rgba(0,0,0,0.85)', // darker semi-transparent black
+        zIndex: 0,
     },
     contentWrapper: {
         flex: 1,
@@ -22,6 +23,7 @@ export default StyleSheet.create({
         paddingHorizontal: '10%',
         justifyContent: 'center',
         alignItems: 'center',
+        zIndex: 1,
     },
     headingWhite: {
         color: colors.white,
