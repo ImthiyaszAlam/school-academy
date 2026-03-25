@@ -1,9 +1,8 @@
 import React from 'react';
-import { View, Text, Image, useWindowDimensions } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import styles from './FoundersSection.styles';
 
-const TestimonialItem = ({ item }) => {
-  const { width } = useWindowDimensions();
+const TestimonialItem = ({ item, width }) => {
   return (
     <View style={[styles.slide, { width }]}> 
       <View style={styles.contentWrapper}>

@@ -1,19 +1,25 @@
 import { StyleSheet } from 'react-native';
-
+import { colors,layout } from '../../theme';
 export default StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor:colors.background,
     paddingVertical: 24,
+    height: layout.sectionHeight,
+    paddingLeft: '10%',
+    paddingRight: '10%',
+    justifyContent: 'center',
   },
   slide: {
     justifyContent: 'center',
     alignItems: 'stretch',
     paddingHorizontal: 20,
+    minHeight: 360,
   },
   contentWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    height: '100%',
   },
   left: {
     flex: 2,

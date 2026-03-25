@@ -1,23 +1,24 @@
 import React, { useRef } from 'react';
-import { View, Animated, FlatList, Dimensions, TouchableOpacity } from 'react-native';
+import { View, Animated, FlatList, Dimensions, TouchableOpacity, useWindowDimensions } from 'react-native';
 import TestimonialItem from './TestimonialItem';
 import founders from '../../content/foundersData';
 import styles from './FoundersSection.styles';
 
-const { width } = Dimensions.get('window');
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 
 const FoundersSection = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
   const flatRef = useRef(null);
+  const { width: windowWidth } = useWindowDimensions();
+  const itemWidth = Math.round(windowWidth * 0.8); // leave 10% padding each side
 
-  const renderItem = ({ item }) => <TestimonialItem item={item} />;
+  const renderItem = ({ item }) => <TestimonialItem item={item} width={itemWidth} />;
 
   const onDotPress = (index) => {
-    flatRef.current?.scrollToOffset({ offset: index * width, animated: true });
+    flatRef.current?.scrollToOffset({ offset: index * itemWidth, animated: true });
   };
 
-  const position = Animated.divide(scrollX, width);
+  const position = Animated.divide(scrollX, itemWidth);
 
   return (
     <View style={styles.container}>
@@ -29,7 +30,7 @@ const FoundersSection = () => {
         pagingEnabled
         showsHorizontalScrollIndicator={false}
         decelerationRate={'fast'}
-        snapToInterval={width}
+        snapToInterval={itemWidth}
         snapToAlignment={'start'}
         onScroll={Animated.event(
           [{ nativeEvent: { contentOffset: { x: scrollX } } }],
@@ -37,7 +38,7 @@ const FoundersSection = () => {
         )}
         scrollEventThrottle={16}
         renderItem={renderItem}
-        getItemLayout={(_, index) => ({ length: width, offset: width * index, index })}
+        getItemLayout={(_, index) => ({ length: itemWidth, offset: itemWidth * index, index })}
         removeClippedSubviews
       />
 
