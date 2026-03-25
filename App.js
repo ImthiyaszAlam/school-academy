@@ -1,8 +1,8 @@
-import React from 'react';
-import { ScrollView, View, StyleSheet } from 'react-native';
+import React, { useRef, useState } from 'react';
+import { Modal, ScrollView, View, StyleSheet, Pressable, Text } from 'react-native';
 
 import Navbar from './src/components/Navbar/Navbar';
-import { useRef } from 'react';
+import EnrollmentCard from './src/components/EnrollmentCard/EnrollmentCard';
 
 import HomeSection from './src/sections/HomeSection/HomeSection';
 import AcademicsSection from './src/sections/AcademicsSection/AcademicsSection';
@@ -22,6 +22,7 @@ import HighlightSections from './src/sections/HighlightSections/HighlightSection
 export default function App() {
   // Refs for each section
   const scrollRef = useRef(null);
+  const [isEnrollmentOpen, setIsEnrollmentOpen] = useState(false);
   const sectionRefs = {
     home: useRef(null),
     about: useRef(null),
@@ -48,7 +49,35 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Navbar onNavPress={handleNavPress} />
+      <Navbar onNavPress={handleNavPress} onApplyNow={() => setIsEnrollmentOpen(true)} />
+
+      <Modal
+        visible={isEnrollmentOpen}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setIsEnrollmentOpen(false)}
+      >
+        <View style={styles.modalRoot}>
+          <Pressable
+            style={styles.modalBackdrop}
+            onPress={() => setIsEnrollmentOpen(false)}
+            accessibilityLabel="Close enrollment modal"
+          />
+
+          <View style={styles.modalContent}>
+            <Pressable
+              style={styles.modalCloseButton}
+              onPress={() => setIsEnrollmentOpen(false)}
+              accessibilityLabel="Close"
+            >
+              <Text style={styles.modalCloseButtonText}>×</Text>
+            </Pressable>
+
+            <EnrollmentCard onClose={() => setIsEnrollmentOpen(false)} style={styles.enrollmentCard} />
+          </View>
+        </View>
+      </Modal>
+
       <ScrollView
         ref={scrollRef}
         showsVerticalScrollIndicator={false}
@@ -63,7 +92,7 @@ export default function App() {
         
         <PhotoGallerySection />
         <View ref={sectionRefs.admissions}><AdmissionSection /></View>
-        <View ref={sectionRefs.blog}><BlogSection /></View>
+    
         
         <ChooseUsSection />
         <View ref={sectionRefs.teachers}><TeachersSection /></View>
@@ -79,5 +108,45 @@ const styles = StyleSheet.create({
   },
   scrollContainer: {
     flexGrow: 1,
+  },
+  modalRoot: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalBackdrop: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0,0,0,0.45)',
+  },
+  modalContent: {
+    width: '92%',
+    backgroundColor: 'transparent',
+  },
+  modalCloseButton: {
+    position: 'absolute',
+    top: -12,
+    right: 0,
+    zIndex: 2,
+    backgroundColor: colors.surface,
+    borderRadius: 999,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    shadowColor: '#000',
+    shadowOpacity: 0.15,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  modalCloseButtonText: {
+    color: colors.textPrimary,
+    fontSize: 18,
+    fontWeight: '800',
+    lineHeight: 18,
+  },
+  enrollmentCard: {
+    width: '100%',
   },
 });

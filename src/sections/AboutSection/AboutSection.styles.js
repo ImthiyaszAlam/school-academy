@@ -4,6 +4,7 @@ import { colors, spacing, typography, layout } from '../../theme';
 
 const styles = StyleSheet.create({
   sectionContainer: {
+    justifyContent:'center',
     backgroundColor: colors.background,
   },
   actionRow: {

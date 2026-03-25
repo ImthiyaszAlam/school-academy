@@ -17,7 +17,7 @@ const NAV_ITEMS = [
   { label: 'Teachers', key: 'teachers' },
 ];
 
-const Navbar = ({ onNavPress }) => {
+const Navbar = ({ onNavPress, onApplyNow }) => {
   return (
     <View style={styles.container}>
       {/* Left: Logo */}
@@ -43,7 +43,7 @@ const Navbar = ({ onNavPress }) => {
 
       {/* Right: Apply Now Button */}
       <View style={styles.right}>
-        <IconButton icon="send" text="Apply Now" onPress={() => {}} />
+        <IconButton icon="send" text="Apply Now" onPress={onApplyNow} />
       </View>
     </View>
   );
