@@ -14,11 +14,12 @@ import PhotoGallerySection from './src/sections/PhotoGallerySection/PhotoGallery
 import AboutUsSection from './src/sections/AboutUsSection/AboutUsSection';
 import MissionSection from './src/sections/MissionSection/MissionSection';
 import TestimonialSection from './src/sections/TestimonialSection/TestimonialSection';
-
 import { colors } from './src/theme';
 import AboutSection from './src/sections/AboutSection/AboutSection';
 import ChooseUsSection from './src/sections/ChooseUsSection/ChooseUsSection';
 import HighlightSections from './src/sections/HighlightSections/HighlightSections';
+import FooterSection from './src/sections/FooterSection/FooterSection';
+import FoundersSection from './src/sections/FoundersSection/FoundersSection';
 export default function App() {
   // Refs for each section
   const scrollRef = useRef(null);
@@ -89,6 +90,7 @@ export default function App() {
         <HighlightSections />
         <View ref={sectionRefs.academics}><AcademicsSection /></View>
         <View ref={sectionRefs.testimonials}><TestimonialSection /></View>
+        <FoundersSection />
         
         <PhotoGallerySection />
         <View ref={sectionRefs.admissions}><AdmissionSection /></View>
@@ -96,6 +98,9 @@ export default function App() {
         
         <ChooseUsSection />
         <View ref={sectionRefs.teachers}><TeachersSection /></View>
+        
+
+      <FooterSection />
       </ScrollView>
     </View>
   );

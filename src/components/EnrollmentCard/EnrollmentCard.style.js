@@ -3,6 +3,7 @@ import { colors, spacing, typography } from '../../theme';
 
 export default StyleSheet.create({
   card: {
+    width:300,
     backgroundColor: colors.surface || '#FFFFFF',
     borderTopLeftRadius: 50,
     borderTopRightRadius: 50,
@@ -44,14 +45,14 @@ export default StyleSheet.create({
   },
   label: {
     ...typography.caption,
-    color: colors.textTertiary || '#757575',
+    color: colors.textTertiary ,
     marginBottom: spacing.xs,
   },
   input: {
     borderWidth: 1,
     borderColor: colors.border || '#E0E0E0',
     backgroundColor: colors.background2 || '#F5F5F5',
-    borderRadius: 16,
+    borderRadius: 5,
     paddingVertical: 10,
     paddingHorizontal: 12,
     color: colors.textPrimary,

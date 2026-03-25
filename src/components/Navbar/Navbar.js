@@ -9,11 +9,8 @@ import logo from '../../../assets/icon.png';
 
 const NAV_ITEMS = [
   { label: 'Home', key: 'home' },
-  { label: 'About Us', key: 'about' },
-  { label: 'Academics', key: 'academics' },
-  { label: 'Admissions', key: 'admissions' },
-  { label: 'Blog', key: 'blog' },
-  { label: 'Mission', key: 'mission' },
+  { label: 'About', key: 'about' },
+  { label: 'Courses', key: 'academics' },
   { label: 'Teachers', key: 'teachers' },
 ];
 
