@@ -17,8 +17,7 @@ const HomeSection = () => {
 
       <View style={styles.overlay}>
 
-        <SectionTopBar style={styles.sectionTopBar} title="Home" heading="Home" subTitle="Discover a world of opportunities and knowledge."  align='left' titleStyle={styles.heading} headingStyle={styles.heading} subTitleStyle={styles.subTitle}/>
-
+  
         <Text style={styles.heading}>Start your beautiful journey</Text>
         <Text style={styles.subheading}>with Edureka</Text>
         <Text style={styles.paragraph}>

@@ -4,8 +4,8 @@ import { colors, spacing, typography } from '../../../../theme';
 const styles = StyleSheet.create({
   cardContainer: {
     flex: 1,
-    marginBottom: spacing.medium,
-    padding: spacing.medium,
+    marginBottom: spacing.md,
+    paddingVertical: spacing.lg,
     backgroundColor: 'transparent',
     borderRadius: 12,
     borderWidth: 1,
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     fontSize: 48,
-    marginBottom: spacing.medium,
+    marginBottom: spacing.md,
   },
   numberText: {
     fontSize: 32,

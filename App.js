@@ -57,10 +57,11 @@ export default function App() {
       >
         <View ref={sectionRefs.home}><HomeSection /></View>
         <View ref={sectionRefs.about}><AboutSection /></View>
+    
+        <HighlightSections />
         <ChooseUsSection />
         <DepartmentSection />
         <PhotoGallerySection />
-        <HighlightSections />
         <View ref={sectionRefs.academics}><AcademicsSection /></View>
         <View ref={sectionRefs.testimonials}><TestimonialSection /></View>
         <View ref={sectionRefs.admissions}><AdmissionSection /></View>

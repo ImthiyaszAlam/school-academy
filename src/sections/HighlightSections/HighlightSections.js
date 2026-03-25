@@ -20,12 +20,7 @@ const HighlightSections = () => {
       <View style={styles.contentLayer}>
         <View style={styles.overlay} pointerEvents="none" />
         <SectionWrapper style={styles.sectionInner}>
-          <SectionTopBar
-            title={highlightSectionHeader.title}
-            heading={highlightSectionHeader.heading}
-            subTitle={highlightSectionHeader.subTitle}
-            align={highlightSectionHeader.align}
-          />
+     
 
           {/* Highlight Cards Grid */}
           <View style={styles.highlightGrid}>
