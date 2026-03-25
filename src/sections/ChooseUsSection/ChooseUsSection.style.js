@@ -40,6 +40,12 @@ const styles = StyleSheet.create({
 		width: '100%',
 		gap: 0,
 	},
+	headingWhite: {
+		color: colors.white,
+	},
+	subTitleWhite: {
+		color: colors.white,
+	},
 });
 
 export default styles;

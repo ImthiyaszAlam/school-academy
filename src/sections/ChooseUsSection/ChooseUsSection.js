@@ -12,7 +12,14 @@ const ChooseUsSection = () => {
 			{/* Left Side */}
 			<View style={styles.leftContainer}>
 
-				<SectionTopBar title={chooseUsSectionHeader.title} heading={chooseUsSectionHeader.heading} subTitle={chooseUsSectionHeader.subTitle} align={chooseUsSectionHeader.align}/>	
+				<SectionTopBar
+					title={chooseUsSectionHeader.title}
+					heading={chooseUsSectionHeader.heading}
+					subTitle={chooseUsSectionHeader.subTitle}
+					align={chooseUsSectionHeader.align}
+					headingStyle={styles.headingWhite}
+					subTitleStyle={styles.subTitleWhite}
+				/>
 				
 				<View style={styles.cardsGrid}>
 					<View style={styles.cardsRow}>
