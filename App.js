@@ -10,6 +10,7 @@ import AdmissionSection from './src/sections/AdmissionSection/AdmissionSection';
 import BlogSection from './src/sections/BlogSection/BlogSection';
 import TeachersSection from './src/sections/TeachersSection/TeachersSection';
 import PhotoGallerySection from './src/sections/PhotoGallerySection/PhotoGallerySection';
+import ContactSection from './src/sections/ContactSection/ContactSection';
 
 import AboutUsSection from './src/sections/AboutUsSection/AboutUsSection';
 import MissionSection from './src/sections/MissionSection/MissionSection';
@@ -98,7 +99,7 @@ export default function App() {
         
         <ChooseUsSection />
         <View ref={sectionRefs.teachers}><TeachersSection /></View>
-        
+        <ContactSection />
 
       <FooterSection />
       </ScrollView>

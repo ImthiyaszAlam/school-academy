@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { label: 'About', key: 'about' },
   { label: 'Courses', key: 'academics' },
   { label: 'Teachers', key: 'teachers' },
+  { label: 'Contact', key: 'contact' },
 ];
 
 const Navbar = ({ onNavPress, onApplyNow }) => {
