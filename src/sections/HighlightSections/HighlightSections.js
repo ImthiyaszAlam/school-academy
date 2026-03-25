@@ -19,7 +19,7 @@ const HighlightSections = () => {
     >
       <View style={styles.contentLayer}>
         <View style={styles.overlay} pointerEvents="none" />
-        <SectionWrapper>
+        <SectionWrapper style={styles.sectionInner}>
           <SectionTopBar
             title={highlightSectionHeader.title}
             heading={highlightSectionHeader.heading}

@@ -9,11 +9,13 @@ const styles = StyleSheet.create({
   },
   imageBackground: {
     width: '100%',
+  },
+  sectionInner: {
+    minHeight: 0,
     paddingVertical: spacing.lg,
   },
   contentLayer: {
     width: '100%',
-    flex: 1,
     position: 'relative',
   },
   overlay: {
