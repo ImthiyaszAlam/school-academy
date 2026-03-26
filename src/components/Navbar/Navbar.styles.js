@@ -52,6 +52,8 @@ const styles = StyleSheet.create({
   },
   navItemText: {
     ...typography.body,
+    fontStyle:'bold',
+    fontWeight: 'bold',
     color: colors.textPrimary,
     textTransform: 'capitalize',
   },

@@ -64,7 +64,7 @@ export const photoGallerySectionHeader = {
 };
 
 export const foundersSectionHeader = {
-  title: 'Our Team',
+  title: 'Our Message',
   heading: 'Meet Our Team of Visionary Founders',
   subTitle: 'Leaders who shaped our vision and continue to guide our academy.',
   align: 'center',

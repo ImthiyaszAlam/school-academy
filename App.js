@@ -34,6 +34,7 @@ export default function App() {
     teachers: useRef(null),
     mission: useRef(null),
     testimonials: useRef(null),
+    contact: useRef(null),
   };
 
   // Scroll to section handler
@@ -99,7 +100,7 @@ export default function App() {
         
         <ChooseUsSection />
         <View ref={sectionRefs.teachers}><TeachersSection /></View>
-        <ContactSection />
+        <View ref={sectionRefs.contact}><ContactSection /></View>
 
       <FooterSection />
       </ScrollView>
