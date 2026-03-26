@@ -69,3 +69,10 @@ export const foundersSectionHeader = {
   subTitle: 'Leaders who shaped our vision and continue to guide our academy.',
   align: 'center',
 };
+
+export const resultSectionHeader = {
+  title: 'Results',
+  heading: 'Our Achievements & Performance',
+  subTitle: 'See how our students perform in academics and extracurriculars.',
+  align: 'center',
+};

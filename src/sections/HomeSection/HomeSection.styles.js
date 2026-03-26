@@ -13,8 +13,9 @@ export default StyleSheet.create({
   },
   overlay: {
     flex: 1,
+    backgroundColor: 'rgba(18, 17, 17, 0.85)', 
     width: '100%', 
-    backgroundColor: 'rgba(0,0,0,0.85)', // darker semi-transparent black
+   // backgroundColor: 'rgba(0,0,0,0.85)', // darker semi-transparent black
     justifyContent: 'center',
     alignItems: 'flex-start',
     padding: spacing.large,

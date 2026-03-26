@@ -21,6 +21,7 @@ import ChooseUsSection from './src/sections/ChooseUsSection/ChooseUsSection';
 import HighlightSections from './src/sections/HighlightSections/HighlightSections';
 import FooterSection from './src/sections/FooterSection/FooterSection';
 import FoundersSection from './src/sections/FoundersSection/FoundersSection';
+import ResultSection from './src/sections/ResultSection/ResultSection';
 export default function App() {
   // Refs for each section
   const scrollRef = useRef(null);
@@ -93,10 +94,9 @@ export default function App() {
         <View ref={sectionRefs.academics}><AcademicsSection /></View>
         <View ref={sectionRefs.testimonials}><TestimonialSection /></View>
         <FoundersSection />
-        
+        <ResultSection />
         <PhotoGallerySection />
-        <View ref={sectionRefs.admissions}><AdmissionSection /></View>
-    
+  
         
         <ChooseUsSection />
         <View ref={sectionRefs.teachers}><TeachersSection /></View>
