@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { Text, TextInput, View } from 'react-native';
 import styles from './EnrollmentCard.style';
 import AppButton from '../util/AppButton';
+import { Linking } from 'react-native';
 const DEFAULT_SUBTITLE = 'Fill in your details to get started.';
 
 const EnrollmentCard = ({

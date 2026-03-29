@@ -3,7 +3,7 @@ import { colors, spacing, typography } from '../../theme';
 
 export default StyleSheet.create({
   container: {
-    backgroundColor: colors.background,
+    backgroundColor: colors.primary,
     paddingVertical: 20,
     paddingHorizontal: '10%',
     borderTopWidth: 1,
@@ -30,7 +30,7 @@ export default StyleSheet.create({
     marginBottom: 4,
   },
   link: {
-    color: colors.primary,
+    color: colors.white,
     fontSize: 13,
     marginBottom: 6,
   },

@@ -59,7 +59,7 @@ export const highlightSectionHeader = {
 export const photoGallerySectionHeader = {
   title: 'Photo Gallery',
   heading: 'Moments from Our Academy',
-  subTitle: 'A A glimpse into student life and inspiring A glimpse into student life and inspiringA glimpse into student life and inspiring glimpse into student life and inspiring learning experiences.',
+  subTitle: 'A glimpse into student life reveals vibrant learning, creativity, and growth, where curiosity is encouraged, talents are nurtured, and every experience shapes confident, capable individuals ready to embrace future opportunities.',
   align: 'center',
 };
 

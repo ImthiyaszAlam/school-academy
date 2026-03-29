@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: spacing.lg,
+    gap: spacing.md,
   },
   navItem: {
     paddingHorizontal: 0,
@@ -51,11 +51,8 @@ const styles = StyleSheet.create({
     transitionDuration: Platform.OS === 'web' ? '0.2s' : undefined,
   },
   navItemText: {
-    ...typography.body,
-    fontStyle:'bold',
-    fontWeight: 'bold',
     color: colors.textPrimary,
-    textTransform: 'capitalize',
+    textTransform: 'uppercase',
   },
   navItemHovered: {
     color: colors.primary,
@@ -90,6 +87,11 @@ const styles = StyleSheet.create({
   applyButtonIcon: {
     color: colors.white,
     marginRight: spacing.xs,
+  },
+  title:{
+    size: typography.large,
+    color: colors.primary,
+     fontWeight: 'bold',
   },
 });
 

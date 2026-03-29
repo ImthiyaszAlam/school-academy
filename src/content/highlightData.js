@@ -2,32 +2,26 @@
 export const highlightData = [
   {
     id: 1,
-    icon: '�',
-    number: '2000+',
+    icon: '👨‍🎓',
+    number: '500+',
     title: "Our Students",
     description: "Learn from experienced and dedicated educators committed to student success."
   },
   {
     id: 3,
     icon: '📚',
-    number: '50+',
+    number: '10+',
     title: "Classrooms",
     description: "Comprehensive curriculum designed to develop critical thinking and creativity."
   },
   {
     id: 4,
     icon: '🏆',
-    number: '25+',
+    number: '15+',
     title: "Awards",
     description: "Personalized guidance and counseling for academic and personal growth."
   },
-  {
-    id: 5,
-    icon: '💻',
-    number: '15+',
-    title: "Labs",
-    description: "Interactive learning platforms and online resources for enhanced education."
-  },
+
   {
     id: 6,
     icon: '🌟',

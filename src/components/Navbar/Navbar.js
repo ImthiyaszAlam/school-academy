@@ -1,11 +1,8 @@
 
-
-import React from 'react';
 import { View, Text, Image, Pressable, Platform } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
 import IconButton from '../util/IconButton/IconButton';
 import styles from './Navbar.styles';
-import logo from '../../../assets/icon.png';
+import { schoolName } from '../../content/basicData';
 
 const NAV_ITEMS = [
   { label: 'Home', key: 'home' },
@@ -20,7 +17,13 @@ const Navbar = ({ onNavPress, onApplyNow }) => {
     <View style={styles.container}>
       {/* Left: Logo */}
       <View style={styles.left}>
-        <Image source={logo} style={styles.logo} resizeMode="contain" accessibilityLabel="School Logo" />
+        <Image
+          source={schoolName.logo}
+          style={styles.logo}
+          resizeMode="contain"
+          accessibilityLabel="School Logo"
+        />
+        <Text style={styles.title}>{schoolName.title}</Text>
       </View>
 
       {/* Center: Navigation Items */}

@@ -1,17 +1,24 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { FontAwesome5 } from '@expo/vector-icons';
 import styles from './AboutInfoCard.styles';
 
 const AboutInfoCard = ({ icon, title, subtitle }) => (
   <View style={styles.aboutInfoCard}>
+    
     <View style={styles.aboutInfoCardLeft}>
-      <FontAwesomeIcon icon={icon} size={32} style={styles.aboutInfoCardIcon} accessibilityLabel="About info icon" />
+      <FontAwesome5
+        name={icon}          
+        size={28}
+        color="#4A90E2"      
+      />
     </View>
+
     <View style={styles.aboutInfoCardRight}>
       <Text style={styles.aboutInfoCardTitle}>{title}</Text>
-      <Text style={styles.aboutInfoCardSubtitle}>{subtitle}</Text>
+      <Text style={styles.aboutInfoCardSubtitle }  numberOfLines={2}>{subtitle}</Text>
     </View>
+
   </View>
 );
 

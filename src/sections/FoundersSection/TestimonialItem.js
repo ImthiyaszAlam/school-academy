@@ -4,7 +4,7 @@ import styles from './terstimonialItem.style';
 
 const TestimonialItem = ({ item, width }) => {
   return (
-    <View style={[styles.slide, { width }]}> 
+    <View style={[styles.slide, { width }]}>
       <View style={styles.contentWrapper}>
         <View style={styles.left}>
           <Text style={styles.quote} numberOfLines={20}>
@@ -13,7 +13,7 @@ const TestimonialItem = ({ item, width }) => {
         </View>
 
         <View style={styles.right}>
-          <Image source={{ uri: item.image }} style={styles.avatar} />
+          <Image  source={item.image} style={styles.avatar} />
           <Text style={styles.name}>{item.name}</Text>
           <Text style={styles.role}>{item.role}</Text>
         </View>

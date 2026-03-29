@@ -13,13 +13,13 @@ export default StyleSheet.create({
   },
   overlay: {
     flex: 1,
-    backgroundColor: 'rgba(18, 17, 17, 0.85)', 
-    width: '100%', 
-   // backgroundColor: 'rgba(0,0,0,0.85)', // darker semi-transparent black
+    backgroundColor: 'rgba(18, 17, 17, 0.85)',
+    width: '100%',
+    // backgroundColor: 'rgba(0,0,0,0.85)', // darker semi-transparent black
     justifyContent: 'center',
     alignItems: 'flex-start',
     padding: spacing.large,
-    paddingLeft: '10%',
+    paddingHorizontal: '10%',
   },
   heading: {
     ...typography.headingLarge,
@@ -41,6 +41,11 @@ export default StyleSheet.create({
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 3,
   },
+  schoolName: {
+    ...typography.headingMedium,
+    color: colors.textSecondary,
+  },
+
   paragraph: {
     ...typography.body,
     color: '#fff',
@@ -50,22 +55,18 @@ export default StyleSheet.create({
     maxWidth: 400,
     opacity: 0.95,
   },
-  buttonRow: {
-    flexDirection: 'row',
-    gap: spacing.md,
-    justifyContent: 'flex-start',
-    alignSelf: 'flex-start',
+
+
+  centerContent: {
+    alignItems: 'center',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    width: '100%',
   },
-  button: {
-    minWidth: 120,
-    marginHorizontal: spacing.xs,
-  },
-  buttonSecondary: {
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    borderWidth: 1,
-    borderColor: '#fff',
-  },
-  buttonText: {
-    color: '#fff',
-  },
+  schoolName: {
+    fontSize: 70,
+    fontWeight: 'bold',
+    color: colors.textSecondary,
+    marginBottom: 50,
+  }
 });

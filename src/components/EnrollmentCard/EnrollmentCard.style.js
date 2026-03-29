@@ -3,7 +3,6 @@ import { colors, spacing, typography } from '../../theme';
 
 export default StyleSheet.create({
   card: {
-    width: 350,
     alignSelf: 'flex-end',
     marginRight: spacing.lg,
     backgroundColor: colors.surface || '#FFFFFF',
@@ -47,7 +46,7 @@ export default StyleSheet.create({
   },
   label: {
     ...typography.caption,
-    color: colors.textTertiary ,
+    color: colors.textTertiary,
     marginBottom: spacing.xs,
   },
   input: {

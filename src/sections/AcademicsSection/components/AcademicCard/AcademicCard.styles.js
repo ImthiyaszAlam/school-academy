@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     marginLeft: spacing.xs,
   },
   title:{
-    ...typography.headingMedium,
+    ...typography.headingSmall,
     color: colors.text,
     marginBottom: spacing.xs,
   },

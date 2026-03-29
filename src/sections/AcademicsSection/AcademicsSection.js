@@ -20,7 +20,7 @@ const AcademicsSection = () => {
     {/* Grid layout for academic cards - 3 columns */}
     <View style={{ flexDirection: 'row', width: '100%', flexWrap: 'wrap', marginTop: 20 }}>
       {academicsData.map((program) => (
-        <View key={program.id} style={{ flex: 1, minWidth: '33.33%', paddingHorizontal: 4, marginBottom: 20 }}>
+        <View key={program.id} style={{ flex: 1, minWidth: '25%', paddingHorizontal: 4, marginBottom: 20 }}>
           <AcademicCard
             image={program.image}
             totalClasses={program.totalClasses}

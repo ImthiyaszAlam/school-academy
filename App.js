@@ -87,22 +87,23 @@ export default function App() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContainer}
       >
-        <View ref={sectionRefs.home}><HomeSection /></View>
+        <View ref={sectionRefs.home}>
+          <HomeSection onApplyNow={() => setIsEnrollmentOpen(true)} />
+        </View>
         <View ref={sectionRefs.about}><AboutSection /></View>
-    
+
         <HighlightSections />
         <View ref={sectionRefs.academics}><AcademicsSection /></View>
         <View ref={sectionRefs.testimonials}><TestimonialSection /></View>
         <FoundersSection />
-        <ResultSection />
         <PhotoGallerySection />
-  
-        
+
+
         <ChooseUsSection />
         <View ref={sectionRefs.teachers}><TeachersSection /></View>
         <View ref={sectionRefs.contact}><ContactSection /></View>
 
-      <FooterSection />
+        <FooterSection />
       </ScrollView>
     </View>
   );

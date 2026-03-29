@@ -25,31 +25,19 @@ export default StyleSheet.create({
     zIndex: 1,
   },
   root: {
-    justifyContent: 'center',
+    justifyContent: 'space-between',
   },
   inner: {
     flexDirection: 'row',
-    gap: 20,
     alignItems: 'center',
     justifyContent: 'space-between',
-    flexWrap: 'wrap',
   },
-  left: {
-    flex: 1,
-    minWidth: 220,
-    maxWidth: 420,
-    paddingRight: 12,
-  },
-  right: {
-    flex: 1,
-    minWidth: 220,
-    maxWidth: 520,
-  },
+
   heading: {
-    fontSize: typography.large + 2,
+    fontSize: 30,
     fontWeight: '700',
-    color: colors.textPrimary,
-    marginBottom: 8,
+    color: colors.white,
+    marginBottom: 16,
   },
   label: {
     fontSize: typography.small,
@@ -122,4 +110,6 @@ export default StyleSheet.create({
     color: colors.onPrimary || '#fff',
     fontWeight: '700',
   },
+  contactInfo: {
+    marginTop: 16,  }
 });

@@ -6,13 +6,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: colors.background,
-    borderRadius: layout.borderRadius,
-    padding: spacing.md,
+    borderRadius: 50,
+    paddingHorizontal:16,
+    paddingVertical:8,
     marginBottom: spacing.md,
     shadowColor: colors.shadow || '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.08,
-    shadowRadius: 4,
+    shadowRadius: 50,
+    borderBottomLeftRadius: 0,
     elevation: 2,
   },
   aboutInfoCardLeft: {
@@ -35,6 +37,7 @@ const styles = StyleSheet.create({
   },
   aboutInfoCardSubtitle: {
     ...typography.body,
+  
     color: colors.textTertiary,
   },
 });

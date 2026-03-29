@@ -4,7 +4,9 @@ import { colors, spacing, typography, layout } from '../../theme';
 
 const styles = StyleSheet.create({
   sectionContainer: {
+    paddingVertical: 0,
     justifyContent:'center',
+    paddingLeft: 0,
     backgroundColor: colors.background,
   },
   actionRow: {
@@ -27,12 +29,6 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     width: '45%',
-    shadowColor: colors.shadow || '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.08,
-    shadowRadius: 8,
-    elevation: 4,
-    borderRadius: layout.borderRadius,
     overflow: 'hidden',
     backgroundColor: colors.background,
   },
@@ -42,8 +38,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: 260,
-    borderRadius: layout.borderRadius,
+    height: layout.sectionHeight,
   },
   imageMobile: {
     height: 180,

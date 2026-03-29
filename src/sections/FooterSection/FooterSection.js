@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Linking } from 'react-native';
 import styles from './FooterSection.styles';
 import { colors } from '../../theme';
+import { schoolName } from '../../content/basicData';
 
 const FooterSection = () => {
   const open = async (url) => {
@@ -14,7 +15,7 @@ const FooterSection = () => {
     <View style={styles.container}>
       <View style={styles.columns}>
         <View style={styles.col}>
-          <Text style={styles.heading}>School Academy</Text>
+          <Text style={styles.heading}>{schoolName.title}</Text>
           <Text style={styles.text}>Providing quality education and a nurturing environment for students.</Text>
         </View>
 
@@ -33,14 +34,14 @@ const FooterSection = () => {
 
         <View style={styles.col}>
           <Text style={styles.heading}>Contact</Text>
-          <Text style={styles.text}>123 Main St, Your City</Text>
-          <Text style={styles.text}>+1 (555) 123-4567</Text>
-          <Text style={styles.text}>info@schoolacademy.edu</Text>
+          <Text style={styles.text}>{schoolName.schoolAddress}</Text>
+          <Text style={styles.text}>{schoolName.mobileNumber}</Text>
+          <Text style={styles.text}>{schoolName.emailAddress}</Text>
         </View>
       </View>
 
       <View style={styles.bottomRow}>
-        <Text style={styles.bottomText}>© {new Date().getFullYear()} School Academy. All rights reserved.</Text>
+        <Text style={styles.bottomText}>© {new Date().getFullYear()} JSVL Academy. All rights reserved.</Text>
       </View>
     </View>
   );
